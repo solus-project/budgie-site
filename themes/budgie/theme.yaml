@@ -1,0 +1,13 @@
+---
+name: "Budgie"
+license: "Apache-2.0"
+licenselink: "https://www.apache.org/licenses/LICENSE-2.0"
+description: "Official theme of the Budgie Desktop website."
+homepage: "http://budgie-desktop.com"
+tags: ["budgie", "desktop", "linux", "gnome"]
+features: ["minimalistic design", "light color palette", "an awesome desktop experience"]
+min_version: 0.18
+author:
+  name: "Solus Project"
+  homepage: "https://solus-project.com"
+---

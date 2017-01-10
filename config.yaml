@@ -1,0 +1,39 @@
+---
+# Config
+baseurl: "http://budgie-desktop.com/"
+config: "config.yaml"
+title: "Budgie Desktop"
+# Content
+archetypedir: "themes/solus/archetypes"
+buildDrafts: false
+googleanalytics: "UA-Not-Yet"
+languageCode: "en-us"
+metaDataFormat: "yaml"
+paginate: 5
+layoutsdir:   "themes/budgie/layouts"
+# Blackfriday Markdown Tweaks
+blackfriday:
+    hrefTargetBlank: true # Opens external URLs in a new tab / window (target _blank)
+# Menu
+menu:
+  header:
+      - Name: "Home"
+        Identifier: "home"
+        URL: "/home"
+        Weight: 1
+      - Name: "About"
+        Identifier: "about"
+        URL: "/about"
+      - Name: "Get"
+        Identifier: "get"
+        URL: "/get"
+      - Name: "Showcase"
+        Identifier: "showcase"
+        URL: "/showcase"
+# Special Params
+params:
+    copyright: "2017"
+# Theming
+themesDir: "themes"
+theme: "budgie"
+---
