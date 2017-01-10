@@ -8,7 +8,7 @@ deploy:
 	rm -v public-deployed/index.html
 
 local:
-	hugo server --baseURL "http://127.0.0.1:1313" --watch --quiet --ignoreCache
+	hugo server --baseURL "http://127.0.0.1:1313" --watch --ignoreCache
 
 pull:
 	git pull --rebase

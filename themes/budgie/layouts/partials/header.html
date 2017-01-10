@@ -1,0 +1,10 @@
+{{ $site := .Site }}
+<header>
+	<a href="{{ $site.BaseURL }}/home"><img src="{{ $site.BaseURL }}/imgs/logo.png" /> Budgie Desktop</a>
+	<section data-budgie-component="menu">
+		{{- range $site.Menus.main }}
+			{{- $absoluteMenuURL := (.URL | absURL) -}}
+			<a href="{{ $absoluteMenuURL }}"{{- if hasPrefix "$pagePermalink" "$absoluteMenuURL" -}}active{{- end -}}>{{ .Name }}</a>
+		{{ end -}}
+	</section>
+</header>

@@ -4,7 +4,7 @@ baseurl: "http://budgie-desktop.org/"
 config: "config.yaml"
 title: "Budgie Desktop"
 # Content
-archetypedir: "themes/solus/archetypes"
+archetypedir: "themes/budgie/archetypes"
 buildDrafts: false
 googleanalytics: "UA-Not-Yet"
 languageCode: "en-us"
