@@ -6,6 +6,7 @@
 	</span>
 </div>
 <div data-budgie-component="blog-list">
+	<h3>Latest News</h3>
 	{{ $filteredPosts := (where .Site.Pages ".Params.categories" "!=" nil)}}
 	{{ $blogPosts := first 5  $filteredPosts }}
 	{{ range $blog := $filteredPosts }}

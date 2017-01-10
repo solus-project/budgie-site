@@ -6,6 +6,8 @@
 			{{ partial "header.html" . }}
 			{{ if eq .Title "Home" }}
 				{{ partial "home/page.html" . }}
+			{{ else }}
+				{{ .Content }}
 			{{ end }}
 		</div>
 		{{ partial "footer.html" . }}
