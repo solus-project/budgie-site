@@ -1,0 +1,28 @@
+"Haste":
+    Icon: "haste.png"
+    Description: "Post text to Hastebin directly from your desktop."
+    URL: "https://github.com/cybre/budgie-haste-applet"
+"Keyboard Layout Widget":
+    Icon: "keyboard-layout-indicator.png"
+    Description: "Indicates the current keyboard layout and enables the user to switch layouts."
+    URL: "https://github.com/budgie-desktop/budgie-desktop"
+"Notifications":
+    Icon: "notifications.png"
+    Description: "Indicates new notifications and gives a one-click access to view them."
+    URL: "https://github.com/budgie-desktop/budgie-desktop"
+"Places":
+    Icon: "places.png"
+    Description: "Enables access to a User’s Documents, Music, Pictures, removable media and more."
+    URL: "https://github.com/budgie-desktop/budgie-desktop"
+"Raven Sidebar Control":
+    Icon: "raven-sidebar-control.png"
+    Description: "One-click toggle for Raven."
+    URL: "https://github.com/budgie-desktop/budgie-desktop"
+"Screenshot":
+    Icon: "screenshot.png"
+    Description: "Take a screenshot of your desktop, a window or region. Save to disk or upload."
+    URL: "https://github.com/cybre/budgie-screenshot-applet"
+"User Indicator":
+    Icon: "user-indicator.png"
+    Description: "Enables the user to quickly lock, logout, suspend, restart, and shut down."
+    URL: "https://github.com/budgie-desktop/budgie-desktop"

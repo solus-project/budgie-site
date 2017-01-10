@@ -1,0 +1,19 @@
+{{ $baseurl := .baseurl }}
+{{ $list := .list }}
+<div data-budgie-component="showcase-list">
+	{{ range $name, $item := $list }}
+		<div data-budgie-component="showcase-item">
+			{{ if ne $item.Icon "" }}
+				{{ $iconURL := printf "%s/imgs/widget-icons/%s" $baseurl $item.Icon }}
+				<img src="{{ $iconURL }}" />
+			{{ end }}
+			<div data-budgie-component="showcase-item-info">
+				<b>{{ $name }}</b>
+				<p>{{ $item.Description }}</p>
+			</div>
+			<div data-budgie-components="showcase-item-links">
+				<a href="{{ $item.URL }}">Learn More</a>
+			</div>
+		</div>
+	{{ end }}
+</div>

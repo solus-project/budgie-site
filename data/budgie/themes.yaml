@@ -1,0 +1,9 @@
+"Adapta":
+    Description: " An adaptive Gtk+ theme based on Material Design Guidelines."
+    URL: "https://github.com/adapta-project/adapta-gtk-theme"
+"Arc":
+    Description: " A flat theme with transparent elements."
+    URL: "https://github.com/horst3180/arc-theme"
+"Paper":
+    Description: "Paper is a modern desktop theme suite. Its design is mostly flat with a minimal use of shadows for depth."
+    URL: "https://github.com/snwh/paper-gtk-theme"

@@ -1,0 +1,5 @@
+<h1>Showcasing the best from Budgie and our community.</h1>
+<h2>Widgets</h2>
+{{ partial "showcase/list.html" (dict "baseurl" .Site.BaseURL "list" .Site.Data.budgie.widgets) }}
+<h2>Themes</h2>
+{{ partial "showcase/list.html" (dict "baseurl" .Site.BaseURL "list" .Site.Data.budgie.themes) }}
