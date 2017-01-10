@@ -32,6 +32,7 @@ menu:
         URL: "/showcase"
 # Special Params
 params:
+    category: ["development"]
     copyright: "2017"
 # Theming
 themesDir: "themes"
