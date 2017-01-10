@@ -1,2 +1,0 @@
-{{ $latestBudgieReleaseJSON := getJSON "https://api.github.com/repos/budgie-desktop/budgie-desktop/releases/latest" }}
-{{ printf "%v" $latestBudgieReleaseJSON.tag_name }}
