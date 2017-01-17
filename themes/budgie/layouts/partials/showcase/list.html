@@ -6,7 +6,7 @@
 		<div data-budgie-component="showcase-item">
 			{{ if eq $item.NoIcon nil }}
 				{{ $iconURL := printf "%s/imgs/widget-icons/%s.png" $baseurl $typename }}
-				<img src="{{ $iconURL }}" data-budgie-widget-icon="{{ $typename }}" />
+				<div data-budgie-widget-icon="{{ $typename }}"></div>
 			{{ end }}
 			<div data-budgie-component="showcase-item-info">
 				<b>{{ $name }}</b>
