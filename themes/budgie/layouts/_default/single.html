@@ -12,7 +12,9 @@
 			{{ else if eq .Title "Showcase" }}
 				{{ partial "showcase/page.html" . }}
 			{{ else }}
-				{{ .Content }}
+				<div data-solbit="content">
+					{{ .Content }}
+				</div>
 			{{ end }}
 		</div>
 		{{ partial "footer.html" . }}
