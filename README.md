@@ -55,4 +55,5 @@ I use 4-char wide tabs, not spaces, in everything **except** the YAML files. I k
 
 ## Licensing
 
-Apache 2.0
+- Budgie Site: Apache 2.0
+- Information on icon licensing can be found [here](https://github.com/budgie-desktop/budgie-desktop/tree/master/data/icons).
