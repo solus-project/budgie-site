@@ -1,20 +1,22 @@
 {{ $site := .Site }}
-{{ partial "get/banner.html" . }}
-<div data-budgie-component="get-list">
-	{{ range $name, $item := .Site.Data.get.os }}
-		<div data-budgie-component="get-list-item">
-			<div data-budgie-component="get-list-item-info">
-				<a href="{{ $item.URL }}">{{ $name }}</a>
-				<span>{{ $item.Description }}</span>
+<div data-budgie-component="get-page">
+	{{ partial "get/banner.html" . }}
+	<div data-budgie-component="get-list">
+		{{ range $name, $item := .Site.Data.get.os }}
+			<div data-budgie-component="get-list-item">
+				<div data-budgie-component="get-list-item-info">
+					<a href="{{ $item.URL }}">{{ $name }}</a>
+					<span>{{ $item.Description }}</span>
+				</div>
+				<div data-budgie-component="get-list-item-download">
+					<a data-solbit="button" data-solbit-size="large" href="{{ $item.URL }}">Download</a>
+					{{ if eq $site.Params.budgieversion $item.BudgieVersion }} <!-- Latest Budgie Release -->
+						<b data-budgie-component="version-latest">Latest: {{ $item.BudgieVersion }}</b>
+					{{ else }} <!-- Not Latest -->
+						<b data-budgie-component="version-outdated">Outdated: {{ $item.BudgieVersion }}</b>
+					{{ end }}
+				</div>
 			</div>
-			<div data-budgie-component="get-list-item-download">
-				<a href="{{ $item.URL }}">Download</a>
-				{{ if eq $site.Params.budgieversion $item.BudgieVersion }} <!-- Latest Budgie Release -->
-					<b data-budgie-component="version-latest">Latest: {{ $item.BudgieVersion }}</b>
-				{{ else }} <!-- Not Latest -->
-					<b data-budgie-component="version-outdated">Outdated: {{ $item.BudgieVersion }}</b>
-				{{ end }}
-			</div>
-		</div>
-	{{ end }}
+		{{ end }}
+	</div>
 </div>
