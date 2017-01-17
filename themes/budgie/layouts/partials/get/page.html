@@ -2,6 +2,7 @@
 <div data-budgie-component="get-page">
 	{{ partial "get/banner.html" . }}
 	<div data-budgie-component="get-list">
+		<h1>Try Budgie on other operating systems!</h1>
 		{{ range $name, $item := .Site.Data.get.os }}
 			<div data-budgie-component="get-list-item">
 				<div data-budgie-component="get-list-item-info">
