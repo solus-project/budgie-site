@@ -24,12 +24,15 @@ menu:
       - Name: "About"
         Identifier: "about"
         URL: "/about"
+        Weight: 2
       - Name: "Get"
         Identifier: "get"
         URL: "/get"
+        Weight: 3
       - Name: "Showcase"
         Identifier: "showcase"
         URL: "/showcase"
+        Weight: 4
 # Special Params
 params:
     budgieversion: "10.2.9"
