@@ -19,8 +19,10 @@ configuration in the `content/blog/` directory.
 
 ### Setup
 
-To set up your Solus system for the website development, you first need to ensure you have the necessary dependencies installed. Run `make setup` to install the necessary dependencies as well as 
-init git submodules. If you're not on Solus, make sure to install `hugo` 0.18.1 or above.
+To get started on Budgie site development, run `make setup` on your Solus system. If you're not on Solus, you'll need to:
+
+1. Install `hugo` 0.18.1 or above.
+2. Run `git submodule init`.
 
 Next, run `make sync` to sync the latest CSS and JS and ensure they are copied over the appropriate directories.
 
@@ -28,7 +30,7 @@ Next, run `make sync` to sync the latest CSS and JS and ensure they are copied o
 
 You can start up a local server by calling `make local` in the `budgie-site` directory. This will expose the site on `http://127.0.0.1:1313/home`.
 
-**Note:** You will not need to restart the server when doing changes. Hugo does file watching across all the things.
+**Note:** You should not need to restart the server when doing changes. Hugo does file watching across all the things.
 
 ### Deployment
 
