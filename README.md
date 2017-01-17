@@ -56,4 +56,5 @@ I use 4-char wide tabs, not spaces, in everything **except** the YAML files. I k
 ## Licensing
 
 - Budgie Site: Apache 2.0
-- Information on icon licensing can be found [here](https://github.com/budgie-desktop/budgie-desktop/tree/master/data/icons).
+- Information on Budgie Widget icon licensing can be found [here](https://github.com/budgie-desktop/budgie-desktop/tree/master/data/icons).
+- Adapta GTK Theme logo licensed under [CC-By-SA 3.0](https://github.com/adapta-project/adapta-github-resources/blob/master/LICENSE.)

@@ -5,8 +5,7 @@
 		{{ $typename := replace (lower $name) " " "-" }}
 		<div data-budgie-component="showcase-item">
 			{{ if eq $item.NoIcon nil }}
-				{{ $iconURL := printf "%s/imgs/widget-icons/%s.png" $baseurl $typename }}
-				<div data-budgie-widget-icon="{{ $typename }}"></div>
+				<div data-budgie-icon="{{ $typename }}"></div>
 			{{ end }}
 			<div data-budgie-component="showcase-item-info">
 				<b>{{ $name }}</b>
