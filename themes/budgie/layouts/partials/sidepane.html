@@ -1,5 +1,5 @@
 {{ $site := . }}
-<div data-budgie-component="sidepane">
+<div data-solbit="sidepane">
 	{{- range $site.Menus.header }}
 		{{ if ne .Name "Get" }}
 			{{- $absoluteMenuURL := (.URL | absURL) -}}

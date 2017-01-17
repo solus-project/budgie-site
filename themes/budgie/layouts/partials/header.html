@@ -1,10 +1,11 @@
 {{ $site := .Site }}
 <header>
 	<a href="{{ $site.BaseURL }}/home"><img src="{{ $site.BaseURL }}/imgs/logo.png" /> Budgie Desktop</a>
-	<section data-budgie-component="menu">
+	<section data-solbit="menu">
 		{{- range $site.Menus.header }}
 			{{- $absoluteMenuURL := (.URL | absURL) -}}
 			<a href="{{ $absoluteMenuURL }}"{{- if hasPrefix "$pagePermalink" "$absoluteMenuURL" -}}active{{- end -}}>{{ .Name }}</a>
 		{{ end -}}
 	</section>
+	<div data-solbit="button" data-solbit-icon="menu" data-solbit-custom></div>
 </header>
