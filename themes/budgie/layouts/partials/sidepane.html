@@ -1,10 +1,7 @@
 {{ $site := . }}
 <div data-solbit="sidepane">
 	{{- range $site.Menus.header }}
-		{{ if ne .Name "Get" }}
-			{{- $absoluteMenuURL := (.URL | absURL) -}}
-			<a href="{{ $absoluteMenuURL }}"{{- if hasPrefix "$pagePermalink" "$absoluteMenuURL" -}}active{{- end -}}>{{ .Name }}</a>
-		{{ end }}
+		{{- $absoluteMenuURL := (.URL | absURL) -}}
+		<a href="{{ $absoluteMenuURL }}"{{- if hasPrefix "$pagePermalink" "$absoluteMenuURL" -}}active{{- end -}}>{{ .Name }}</a>
 	{{ end -}}
-	{{ partial "navigation/get.html" $site }}
 </div>

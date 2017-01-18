@@ -4,7 +4,11 @@
 <div data-budgie-component="solus-banner" {{ if ne $ismenu nil }}data-budgie-component-type="menu"{{ end }}>
 	<span>
 		<h1>Get on Solus</h1>
-		<h2>Solus always provides the <b>latest</b> flagship Budgie experience.</h2>
+		{{ if eq $ismenu nil }}
+			<h2>Solus always provides the <b>latest</b> flagship Budgie experience.</h2>
+		{{ else }}
+			<h2>Solus provides the flagship Budgie experience.</h2>
+		{{ end }}
 		<a data-solbit="button" data-solbit-size="large" data-solbit-custom data-solbit-enfsize href="https://solus-project.com/download">Download</a>
 		<section>Budgie {{ $site.Params.budgieversion }}</section>
 	</span>

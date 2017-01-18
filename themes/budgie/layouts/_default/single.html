@@ -13,6 +13,9 @@
 				{{ partial "showcase/page.html" . }}
 			{{ else }}
 				<div data-solbit="content">
+					{{ if ne .Title "About" }}
+						{{ partial "blog/info.html" . }}
+					{{ end }}
 					{{ .Content }}
 				</div>
 			{{ end }}

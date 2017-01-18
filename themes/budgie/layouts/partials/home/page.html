@@ -12,6 +12,7 @@
 		{{ $blogPosts := first 5  $filteredPosts }}
 		{{ range $blog := $filteredPosts }}
 			{{ partial "blog/info.html" $blog }}
+			{{ $blog.Summary }}
 		{{ end }}
 	</div>
 </div>

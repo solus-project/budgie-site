@@ -3,9 +3,14 @@
 	<a href="{{ $site.BaseURL }}/home"><img src="{{ $site.BaseURL }}/imgs/logo.png" /> Budgie Desktop</a>
 	<section data-solbit="menu">
 		{{- range $site.Menus.header }}
-			{{- $absoluteMenuURL := (.URL | absURL) -}}
-			<a href="{{ $absoluteMenuURL }}"{{- if hasPrefix "$pagePermalink" "$absoluteMenuURL" -}}active{{- end -}}>{{ .Name }}</a>
+			{{ if ne .Name "Get" }}
+				{{- $absoluteMenuURL := (.URL | absURL) -}}
+				<a href="{{ $absoluteMenuURL }}"{{- if hasPrefix "$pagePermalink" "$absoluteMenuURL" -}}active{{- end -}}>{{ .Name }}</a>
+			{{ else }}
+				<span>{{ .Name }}</span>
+			{{ end }}
 		{{ end -}}
 	</section>
 	<div data-solbit="button" data-solbit-icon="menu" data-solbit-custom></div>
+	{{ partial "navigation/get.html" $site }}
 </header>
