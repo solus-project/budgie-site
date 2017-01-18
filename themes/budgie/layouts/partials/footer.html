@@ -1,3 +1,7 @@
 <script type="text/javascript">
 	solbit.Init(); // Initialize Solbit
+
+	var getHeaderItem = document.querySelector('header > section > span:first-of-type'); // Fetch the Get header item
+	var getFancyNav = document.querySelector('div[data-budgie-component="fancy-get-nav"]'); // Fetch the getFancyNav
+	solbit.header.Enable(getHeaderItem, getFancyNav); // Enable the Fancy Nav
 </script>
