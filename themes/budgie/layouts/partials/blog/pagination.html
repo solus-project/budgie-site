@@ -1,0 +1,22 @@
+{{ $currentPage := .paginator.PageNumber }}
+{{ $ourPaginator := .paginator }}
+
+<!-- Beginning of Pagination -->
+{{ if gt $ourPaginator.TotalPages 1 }}
+	<div data-solbit="paginate">
+		{{ if $ourPaginator.HasPrev }}
+			{{ range $paginator := last 5 (first (sub $currentPage 1) $ourPaginator.Pagers ) }}
+				<a href="{{ $paginator.URL }}">{{ $paginator.PageNumber }}</a>
+			{{ end }}
+		{{ end }}
+
+		<a data-solbit="button" data-solbit-size="small" href="{{ $ourPaginator.URL }}" active>{{ $currentPage }}</a>
+
+		{{ if $ourPaginator.HasNext }}
+			{{ range $paginator := first 5 (after $currentPage $ourPaginator.Pagers ) }}
+				<a href="{{ $paginator.URL }}">{{ $paginator.PageNumber }}</a>
+			{{ end }}
+		{{ end }}
+	</div>
+{{ end }}
+<!-- End of Pagination -->

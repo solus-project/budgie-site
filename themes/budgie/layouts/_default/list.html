@@ -1,3 +1,5 @@
+{{ $blogPosts := .Paginator.Pages }}
+
 <!DOCTYPE html>
 <html>
 	{{ partial "metadata.html" . }}
@@ -5,8 +7,16 @@
 		{{ partial "sidepane.html" .Site }}
 		<div data-solbit="main">
 			{{ partial "header.html" . }}
-			<div data-budgie-component="blog-list">
-
+			<div data-solbit="content">
+				<div data-budgie-component="list" data-budgie-component-type="blog">
+						{{ range $blog := $blogPosts }}
+							<div data-budgie-component="list-item" data-budgie-component-type="blog">
+								{{ partial "blog/info.html" $blog }}
+								{{ $blog.Summary }}
+							</div>
+						{{ end }}
+						{{ partial "blog/pagination.html" (dict "paginator" .Paginator ) }}
+				</div>
 			</div>
 		</div>
 		{{ partial "footer.html" . }}
