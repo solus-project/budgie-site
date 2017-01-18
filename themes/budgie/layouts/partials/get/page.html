@@ -1,6 +1,6 @@
 {{ $site := .Site }}
 <div data-budgie-component="get-page">
-	{{ partial "get/banner.html" . }}
+	{{ partial "get/banner.html" (dict "site" $site) }}
 	<div data-budgie-component="get-list">
 		<h1>Try Budgie on other operating systems!</h1>
 		{{ range $name, $item := .Site.Data.get.os }}
