@@ -13,6 +13,7 @@
 					</div>
 					{{ $filename := printf "content/roadmap/%s.txt" $version }}
 					{{ readFile $filename | markdownify | safeHTML }}
+				</div>
 			{{ end }}
 		</div>
 	</div>
