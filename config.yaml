@@ -1,6 +1,6 @@
 ---
 # Config
-baseurl: "http://budgie-desktop.org/"
+baseurl: "https://budgie-desktop.org/"
 config: "config.yaml"
 title: "Budgie Desktop"
 # Content
