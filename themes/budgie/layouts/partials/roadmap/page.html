@@ -7,12 +7,15 @@
 			{{ range $version, $info := .Site.Data.budgie.roadmap }}
 				<div data-budgie-component="roadmap-item">
 					<div data-budgie-component="roadmap-header">
-						<div data-budgie-component="roadmap-circle">{{ $version }}</div>
+						{{ $colorNum := index (shuffle (seq 1 4)) 1 }}
+						<div data-budgie-component="roadmap-circle" data-budgie-colornum="{{ $colorNum }}">{{ $version }}</div>
 						<b>Budgie {{ $version }}</b>
 						<section>{{ $info.Timeline }}</section>
 					</div>
 					{{ $filename := printf "content/roadmap/%s.txt" $version }}
-					{{ readFile $filename | markdownify | safeHTML }}
+					<section>
+						{{ readFile $filename | markdownify | safeHTML }}
+					</section>
 				</div>
 			{{ end }}
 		</div>
