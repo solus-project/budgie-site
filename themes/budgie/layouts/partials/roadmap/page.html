@@ -10,7 +10,7 @@
 						<div data-budgie-component="roadmap-circle">{{ $version }}</div>
 						<b>Budgie {{ $version }}</b>
 						<section>{{ $info.Timeline }}</section>
-					</section>
+					</div>
 					{{ $filename := printf "content/roadmap/%s.txt" $version }}
 					{{ readFile $filename | markdownify | safeHTML }}
 			{{ end }}
