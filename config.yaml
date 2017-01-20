@@ -33,10 +33,14 @@ menu:
         Identifier: "get"
         URL: "/get"
         Weight: 4
+      - Name: "Roadmap"
+        Identifier: "roadmap"
+        URL: "/roadmap"
+        Weight: 5
       - Name: "Showcase"
         Identifier: "showcase"
         URL: "/showcase"
-        Weight: 5
+        Weight: 6
 # Special Params
 params:
     budgieversion: "10.2.9"

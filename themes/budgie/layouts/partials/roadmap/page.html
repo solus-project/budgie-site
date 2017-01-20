@@ -1,0 +1,19 @@
+{{ $site := .Site }}
+<div data-solbit="content">
+	<div data-budgie-component="roadmap">
+		<h1>Roadmap</h1>
+		<h2>The roadmap below is subject to change and not indicative of all the changes that may occur in the respective release.</h2>
+		<div data-budgie-component="roadmap-items">
+			{{ range $version, $info := .Site.Data.budgie.roadmap }}
+				<div data-budgie-component="roadmap-item">
+					<div data-budgie-component="roadmap-header">
+						<div data-budgie-component="roadmap-circle">{{ $version }}</div>
+						<b>Budgie {{ $version }}</b>
+						<section>{{ $info.Timeline }}</section>
+					</section>
+					{{ $filename := printf "content/roadmap/%s.txt" $version }}
+					{{ readFile $filename | markdownify | safeHTML }}
+			{{ end }}
+		</div>
+	</div>
+</div>

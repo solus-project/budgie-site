@@ -9,6 +9,8 @@
 				{{ partial "home/page.html" . }}
 			{{ else if eq .Title "Get" }}
 				{{ partial "get/page.html" . }}
+			{{ else if eq .Title "Roadmap" }}
+				{{ partial "roadmap/page.html" . }}
 			{{ else if eq .Title "Showcase" }}
 				{{ partial "showcase/page.html" . }}
 			{{ else }}
