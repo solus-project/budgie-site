@@ -16,9 +16,13 @@
 			{{ else }}
 				<div data-solbit="content">
 					{{ if ne .Title "About" }}
-						{{ partial "blog/info.html" . }}
+						<div data-solbit="blog-content">
+							{{ partial "blog/info.html" (dict "blog" . ) }}
+							{{ .Content }}
+						</div>
+					{{ else }}
+						{{ .Content }}
 					{{ end }}
-					{{ .Content }}
 				</div>
 			{{ end }}
 		</div>

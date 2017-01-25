@@ -1,6 +1,11 @@
-{{ $blog := . }}
+{{ $blog := .blog }}
+{{ $islink := .islink }}
 <div data-budgie-component="blog-info">
-	<a href="{{ absURL $blog.URL }}">{{ title $blog.Title }}</a>
+	{{ if ne $islink nil }}
+		<a href="{{ absURL $blog.URL }}">{{ title $blog.Title }}</a>
+	{{ else }}
+		<h1>{{ title $blog.Title }}</h1>
+	{{ end }}
 	<section>
 		{{ printf "%s on %s" $blog.Params.author (dateFormat "January 2, 2006" $blog.Date) }}
 	</section>

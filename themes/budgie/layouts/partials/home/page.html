@@ -12,7 +12,7 @@
 		{{ $blogPosts := first 5 $filteredPosts }}
 		{{ range $index, $blog := $blogPosts }}
 			<div data-budgie-component="list-item" data-budgie-component-type="blog">
-				{{ partial "blog/info.html" $blog }}
+				{{ partial "blog/info.html" (dict "blog" . "islink" " true") }}
 				{{ if eq (len $blogPosts) 1 }}
 					{{ $blog.Content }}
 				{{ else }}

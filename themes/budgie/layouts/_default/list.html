@@ -11,7 +11,7 @@
 				<div data-budgie-component="list" data-budgie-component-type="blog">
 						{{ range $blog := $blogPosts }}
 							<div data-budgie-component="list-item" data-budgie-component-type="blog">
-								{{ partial "blog/info.html" $blog }}
+								{{ partial "blog/info.html" (dict "blog" . "islink" "true") }}
 								{{ $blog.Summary }}
 							</div>
 						{{ end }}
