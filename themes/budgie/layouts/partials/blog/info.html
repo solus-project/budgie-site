@@ -1,6 +1,6 @@
 {{ $blog := . }}
 <div data-budgie-component="blog-info">
-	<a href="{{ absURL $blog.URL }}">{{ $blog.Title }}</a>
+	<a href="{{ absURL $blog.URL }}">{{ title $blog.Title }}</a>
 	<section>
 		{{ printf "%s on %s" $blog.Params.author (dateFormat "January 2, 2006" $blog.Date) }}
 	</section>
