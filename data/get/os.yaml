@@ -11,6 +11,10 @@
   Description: "Manjaro Budgie is a community spin of Manjaro with Budgie."
   BudgieVersion: "10.2.8"
   URL: "https://forum.manjaro.org/t/manjaro-budgie-16-10/12316"
+"openSUSE":
+  Description: "Budgie packages for openSUSE Leap and Tumbleweed"
+  BudgieVersion: "10.2.9"
+  URL: "https://software.opensuse.org/package/budgie-desktop"
 "Ubuntu Budgie":
   Description: "Ubuntu Budgie is community spin of Ubuntu with Budgie."
   BudgieVersion: "10.2.9"
