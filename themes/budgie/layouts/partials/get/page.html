@@ -5,6 +5,9 @@
 		<h1>Try Budgie on other operating systems!</h1>
 		{{ range $name, $item := .Site.Data.get.os }}
 			<div data-budgie-component="list-item" data-budgie-component-type="get">
+				{{ if ne $item.Icon nil }}
+					<img src="{{ $site.BaseURL }}/imgs/distributions/{{ $item.Icon }}.png" />
+				{{ end }}
 				<div data-budgie-component="get-list-item-info">
 					<a href="{{ $item.URL }}">{{ $name }}</a>
 					<span>{{ $item.Description }}</span>

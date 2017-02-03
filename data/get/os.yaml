@@ -2,6 +2,7 @@
 "Arch Linux":
   Description: "You can try Budgie on Arch Linux right from the community repository."
   BudgieVersion: "10.2.9"
+  Icon: "arch-linux"
   URL: "https://www.archlinux.org/packages/community/x86_64/budgie-desktop/"
 "GeckoLinux Static Budgie":
   Description: "GeckoLinux is a Linux spin based on the openSUSE distribution, with a focus on polish and out-of-the-box usability on the desktop."
@@ -10,6 +11,7 @@
 "Manjaro Budgie":
   Description: "Manjaro Budgie is a community spin of Manjaro with Budgie."
   BudgieVersion: "10.2.8"
+  Icon: "manjaro"
   URL: "https://forum.manjaro.org/t/manjaro-budgie-16-10/12316"
 "Ubuntu Budgie":
   Description: "Ubuntu Budgie is community spin of Ubuntu with Budgie."
