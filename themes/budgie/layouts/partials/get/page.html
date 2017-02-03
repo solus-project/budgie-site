@@ -6,7 +6,9 @@
 		{{ range $name, $item := .Site.Data.get.os }}
 			<div data-budgie-component="list-item" data-budgie-component-type="get">
 				{{ if ne $item.Icon nil }}
-					<img src="{{ $site.BaseURL }}/imgs/distributions/{{ $item.Icon }}.png" />
+					<div data-budgie-component="get-list-item-logo">
+						<img src="{{ $site.BaseURL }}/imgs/distributions/{{ $item.Icon }}.png" />
+					</div>
 				{{ end }}
 				<div data-budgie-component="get-list-item-info">
 					<a href="{{ $item.URL }}">{{ $name }}</a>
