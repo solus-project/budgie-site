@@ -16,4 +16,5 @@
 "Ubuntu Budgie":
   Description: "Ubuntu Budgie is community spin of Ubuntu with Budgie."
   BudgieVersion: "10.2.9"
+  Icon: "ubuntu-budgie"
   URL: "https://budgie-remix.org/"
