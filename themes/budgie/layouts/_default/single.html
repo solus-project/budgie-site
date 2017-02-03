@@ -15,14 +15,14 @@
 				{{ partial "showcase/page.html" . }}
 			{{ else }}
 				<div data-solbit="content">
-					{{ if ne .Title "About" }}
-						<div data-solbit="blog-content">
-							{{ partial "blog/info.html" (dict "blog" . ) }}
+					<div data-solbit="blog-content">
+						{{ if ne .Title "About" }}
+								{{ partial "blog/info.html" (dict "blog" . ) }}
+								{{ .Content }}
+						{{ else }}
 							{{ .Content }}
-						</div>
-					{{ else }}
-						{{ .Content }}
-					{{ end }}
+						{{ end }}
+					</div>
 				</div>
 			{{ end }}
 		</div>
