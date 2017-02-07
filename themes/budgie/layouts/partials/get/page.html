@@ -1,10 +1,10 @@
 {{ $site := .Site }}
 <div data-budgie-component="get-page">
 	{{ partial "get/banner.html" (dict "site" $site) }}
-	<div data-budgie-component="list" data-budgie-component-type="get">
+	<div data-solbit="list" data-budgie-component-type="get">
 		<h1>Try Budgie on other operating systems!</h1>
 		{{ range $name, $item := .Site.Data.get.os }}
-			<div data-budgie-component="list-item" data-budgie-component-type="get">
+			<div data-solbit="list-item" data-budgie-component-type="get">
 				{{ if ne $item.Icon nil }}
 					<div data-budgie-component="get-list-item-logo">
 						<img src="{{ $site.BaseURL }}/imgs/distributions/{{ $item.Icon }}.png" />

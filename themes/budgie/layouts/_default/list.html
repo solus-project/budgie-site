@@ -8,9 +8,9 @@
 		<div data-solbit="main">
 			{{ partial "header.html" . }}
 			<div data-solbit="content">
-				<div data-budgie-component="list" data-budgie-component-type="blog">
+				<div data-solbit="list" data-budgie-component-type="blog">
 						{{ range $blog := $blogPosts }}
-							<div data-budgie-component="list-item" data-budgie-component-type="blog">
+							<div data-solbit="list-item" data-solbit-nolistbg data-budgie-component-type="blog">
 								{{ partial "blog/info.html" (dict "blog" . "islink" "true") }}
 								{{ $blog.Summary }}
 							</div>

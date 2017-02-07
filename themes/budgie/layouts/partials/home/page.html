@@ -6,12 +6,12 @@
 	<a data-solbit="button" data-solbit-size="large" data-solbit-enfsize href="{{ .Site.BaseURL }}about">Learn More</a>
 </div>
 <div data-solbit="content">
-	<div data-budgie-component="list" data-budgie-component-type="blog">
+	<div data-solbit="list" data-budgie-component-type="blog">
 		<h3>Latest News</h3>
 		{{ $filteredPosts := (where .Site.Pages ".Params.categories" "!=" nil)}}
 		{{ $blogPosts := first 5 $filteredPosts }}
 		{{ range $index, $blog := $blogPosts }}
-			<div data-budgie-component="list-item" data-budgie-component-type="blog">
+			<div data-solbit="list-item" data-solbit-nolistbg data-budgie-component-type="blog">
 				{{ partial "blog/info.html" (dict "blog" . "islink" " true") }}
 				{{ if eq (len $blogPosts) 1 }}
 					{{ $blog.Content }}
