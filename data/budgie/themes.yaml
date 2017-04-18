@@ -5,6 +5,10 @@
     NoIcon: true
     Description: " A flat theme with transparent elements."
     URL: "https://github.com/horst3180/arc-theme"
+"Flat-Plat":
+    NoIcon: true
+    Description: "Flat-Plat is a Material Design-like theme for GNOME/GTK+ based desktop environments."
+    URL: "https://github.com/nana-4/Flat-Plat"
 "Paper":
     NoIcon: true
     Description: "Paper is a modern desktop theme suite. Its design is mostly flat with a minimal use of shadows for depth."

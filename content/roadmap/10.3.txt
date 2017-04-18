@@ -1,1 +1,0 @@
-Budgie 10.3 will be a bug fix release to resolve GTK 3.22 issues.

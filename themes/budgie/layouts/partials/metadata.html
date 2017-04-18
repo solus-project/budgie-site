@@ -1,3 +1,4 @@
+{{ $site := .Site }}
 <head>
 	{{ $titledPageName := title .Title }}
 	<title>{{ $titledPageName }} | Budgie</title>
@@ -10,7 +11,11 @@
 	<meta property="og:locale" content="{{ .Site.LanguageCode }}" />
 	<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/website.css" />
 	<link rel="icon" href="{{ .Site.BaseURL}}/imgs/favicon.ico" />
-	<script type="text/javascript" src="{{ .Site.BaseURL}}/js/solbit.min.js"></script>
+	{{ range readDir ("themes/budgie/static/js") }}
+		{{ if and (hasPrefix .Name "solbit") (in .Name ".min.js") }}
+			<script type="text/javascript" src="{{ $site.BaseURL}}js/{{ .Name }}"></script>
+		{{ end }}
+	{{ end }}
 	<meta property="og:link" content="{{ .Permalink }}" />
 	{{ .Hugo.Generator }}
 	{{ if .RSSLink }}

@@ -20,7 +20,8 @@ sync:
 	mkdir -p themes/budgie/static/{css,js}
 	cp -R budgie-site-styling/build/* themes/budgie/static/css/
 	cp -R solbit/build/fonts themes/budgie/static/css/
-	cp solbit/build/solbit.min.js themes/budgie/static/js/
+	rm themes/budgie/static/js/solbit*
+	cp solbit/build/solbit*.min.js themes/budgie/static/js/
 
 help:
 	@echo "deploy    - Create the deployed form of site. Not particularly useful for those not able to deploy the site."

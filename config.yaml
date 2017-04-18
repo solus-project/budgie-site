@@ -43,7 +43,7 @@ menu:
         Weight: 6
 # Special Params
 params:
-    budgieversion: "10.2.9"
+    budgieversion: "10.3.1"
     category: ["development"]
     copyright: "2017"
 # Theming
