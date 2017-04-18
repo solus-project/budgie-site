@@ -1,0 +1,4 @@
+{{ $image := index .Params 0 }}
+{{ $dirname := index .Params 1 | default "posts/" }}
+{{ $dirname := printf "/imgs/%s" $dirname }}
+{{ partial "altimg.html" (dict "image" $image "dir"  $dirname) }}

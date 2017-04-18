@@ -1,0 +1,10 @@
+{{ $image := .image }}
+{{ $dir := .dir }}
+{{ $altName := replace (replace $image ".jpg" "") ".png" "" }}
+{{ $humanizedName := humanize $altName | title }}
+
+{{ if hasPrefix $image "http" }}
+<img alt="{{ $humanizedName }}" src="{{ $image }}" {{ with .class }}class="{{ . }}"{{ end }}/>
+{{ else }}
+<img alt="{{ $humanizedName }}" src="{{ .Site.BaseURL }}{{ $dir }}{{ $image }}" {{ with .class }}class="{{ . }}"{{ end }}/>
+{{ end }}
