@@ -19,7 +19,7 @@ sync:
 	git submodule update --remote --rebase
 	mkdir -p themes/budgie/static/{css,js}
 	cp -R budgie-site-styling/build/* themes/budgie/static/css/
-	cp -R solbit/build/fonts themes/budgie/static/css/
+	cp -R solbit/build/fonts/*.{eot,svg,ttf,woff} themes/budgie/static/css/fonts/
 	rm themes/budgie/static/js/solbit*
 	cp solbit/build/solbit*.min.js themes/budgie/static/js/
 
