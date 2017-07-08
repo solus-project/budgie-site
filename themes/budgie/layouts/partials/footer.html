@@ -5,3 +5,17 @@
 	var getFancyNav = document.querySelector('div[data-budgie-component="fancy-get-nav"]'); // Fetch the getFancyNav
 	solbit.header.Enable("hover", getHeaderItem, getFancyNav); // Enable the Fancy Nav
 </script>
+<script>
+	WebFontConfig = {
+		google: {
+			families: ["Roboto:100", "Roboto:300", "Roboto:400"]
+		}
+	};
+
+	(function(d) {
+		var wf = d.createElement('script'), s = d.scripts[0];
+		wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+		wf.async = true;
+		s.parentNode.insertBefore(wf, s);
+	})(document);
+</script>

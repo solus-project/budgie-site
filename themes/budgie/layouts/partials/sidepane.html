@@ -1,4 +1,5 @@
 {{ $site := . }}
+<div data-solbit="content-overlay"></div>
 <div data-solbit="sidepane">
 	{{- range $site.Menus.header }}
 		{{- $absoluteMenuURL := (.URL | absURL) -}}
