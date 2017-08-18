@@ -4,6 +4,9 @@
 "Keyboard Layout Indicator":
     Description: "Indicates the current keyboard layout and enables the user to switch layouts."
     URL: "https://github.com/budgie-desktop/budgie-desktop"
+"Night Light":
+    Description: "Helps reduce eye strain by reducing your display’s blue light by making your screen “warmer”"
+    URL: "https://github.com/budgie-desktop/budgie-desktop"
 "Notifications":
     Description: "Indicates new notifications and gives a one-click access to view them."
     URL: "https://github.com/budgie-desktop/budgie-desktop"
