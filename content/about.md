@@ -47,5 +47,3 @@ When we originally announced our intent to evolve Budgie by adopting Qt - we exp
 the conversation has been fruitful. With that said, we’ve evaluated a multitude of options, and the moral of the story is: Never say never. In terms of technical details, the “skin” of the Budgie Desktop (i.e. the UI layer itself) will be implemented using a mix of 
 C++ and QtQuick, whilst all the “business logic” of Budgie will be in C++. This will allow us to take advantage of GPU-acceleration via a scene graph for a significantly richer user experience, with more elegant animations and interactions than what we 
 currently have.
-
-For more information about the future of Budgie, such as items for Budgie 11, we welcome you to visit our [Roadmap](/roadmap).
