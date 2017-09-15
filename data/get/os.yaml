@@ -11,9 +11,9 @@
   URL: "https://geckolinux.github.io/"
 "Manjaro Budgie":
   Description: "Manjaro Budgie is a community spin of Manjaro with Budgie."
-  BudgieVersion: "10.2.8"
+  BudgieVersion: "10.4"
   Icon: "manjaro"
-  URL: "https://forum.manjaro.org/t/manjaro-budgie-16-10/12316"
+  URL: "https://forum.manjaro.org/t/manjaro-budgie-17-0-4/31119"
 "Ubuntu Budgie":
   Description: "Ubuntu Budgie is community spin of Ubuntu with Budgie."
   BudgieVersion: "10.4"
