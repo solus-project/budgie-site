@@ -1,7 +1,7 @@
 # Budgie on other Operating Systems
 "Arch Linux":
   Description: "You can try Budgie on Arch Linux right from the community repository."
-  BudgieVersion: "10.3.1"
+  BudgieVersion: "10.4"
   Icon: "arch-linux"
   URL: "https://www.archlinux.org/packages/community/x86_64/budgie-desktop/"
 "GeckoLinux Static Budgie":
