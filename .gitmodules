@@ -1,6 +1,6 @@
 [submodule "solbit"]
 	path = solbit
-	url = https://github.com/solus-project/solbit.git
+	url = https://github.com/getsolus/solbit.git
 [submodule "budgie-site-styling"]
 	path = budgie-site-styling
-	url = https://github.com/budgie-desktop/budgie-site-styling.git
+	url = https://github.com/getsolus/budgie-site-styling.git

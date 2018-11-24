@@ -6,7 +6,7 @@ Static, [Hugo-based](https://gohugo.io) home of Budgie Desktop. This website mak
 2. Custom layouts and importable "fragments" for separation and modularizing of common components, within `layouts`.
 3. Website content itself, including blog posts, in `content`.
 
-**This does not include the LESS-based styling for the website. That is developed separately at the [budgie-site-styling repo](https://github.com/budgie-desktop/budgie-site-styling).**
+**This does not include the LESS-based styling for the website. That is developed separately at the [budgie-site-styling repo](https://github.com/getsolus/budgie-site-styling).**
 
 ## Creation
 
@@ -34,7 +34,7 @@ You can start up a local server by calling `make local` in the `budgie-site` dir
 
 ### Deployment
 
-To compile the website in preparation for deployment, run `make deploy`. This will create a `public-deployed` folder which can be uploaded to the server. Make sure you run a `make sync` prior to deployment, 
+To compile the website in preparation for deployment, run `make deploy`. This will create a `public-deployed` folder which can be uploaded to the server. Make sure you run a `make sync` prior to deployment,
 to ensure you have the latest CSS and JS.
 
 **Note:** This really only applies to the Budgie Desktop website administrators but since the Make recipe exists, may as well document it.
